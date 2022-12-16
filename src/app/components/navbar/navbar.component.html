@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">[M1S11]</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"
+                href="#"
+                aria-current="page" 
+                (click)="page = 'Home'">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+                href="#"
+                (click)="page = 'Preços'">Preços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"
+                href="#"
+                (click)="page = 'Informações'">Informações</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<div [ngSwitch]="page">
+    <h2 *ngSwitchDefault="'Home'">Estou na página de Home</h2>
+    <h2 *ngSwitchCase="'Preços'">Estou na página de Preços</h2>
+    <h2 *ngSwitchCase="'Informações'">Estou na página de Informações</h2>
+</div>
