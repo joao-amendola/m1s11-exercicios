@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CapitalizePhilipsPipe } from './pipes/capitalize-philips.pipe';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgforComponent } from './components/ngfor/ngfor.component';
+import { NgifComponent } from './components/ngif/ngif.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CapitalizePhilipsPipe,
     NavbarComponent,
-    NgforComponent
+    NgforComponent,
+    NgifComponent
   ],
   imports: [
     BrowserModule,
