@@ -8,6 +8,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgforComponent } from './components/ngfor/ngfor.component';
 import { NgifComponent } from './components/ngif/ngif.component';
 import { NgcontentComponent } from './components/ngcontent/ngcontent.component';
+import { NgifngelseComponent } from './components/ngifngelse/ngifngelse.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { NgcontentComponent } from './components/ngcontent/ngcontent.component';
     NavbarComponent,
     NgforComponent,
     NgifComponent,
-    NgcontentComponent
+    NgcontentComponent,
+    NgifngelseComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
